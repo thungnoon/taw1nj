@@ -73,7 +73,10 @@ git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
 # git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 git clone --depth=1 https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone --depth=1 https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
- 
+
+# Poweroffdevice
+git clone --depth=1  https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
+
 # Alist
 git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
