@@ -15,7 +15,6 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 # 移除要替换的包
 rm -rf feeds/packages/lang/golang
 rm -rf feeds/packages/net/mosdns
-rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/packages/net/msd_lite
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/luci/themes/luci-theme-argon
@@ -70,9 +69,7 @@ git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-a
 git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
 
 # MosDNS
-# git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
-git clone --depth=1 https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git clone --depth=1 https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 
 # Poweroffdevice
 git clone --depth=1  https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
