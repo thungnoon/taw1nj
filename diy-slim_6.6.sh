@@ -49,8 +49,8 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/l
 git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
 git_sparse_clone main https://github.com/haiibo/packages luci-theme-opentomcat
 
-#更改design主题为白色
-sed -i 's/dark/light/g' feeds/luci/applications/luci-app-design-config/root/etc/config/design
+# 更改 Argon 主题背景
+cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 
 # 晶晨宝盒
@@ -79,6 +79,12 @@ git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-ali
 
 # Golang
 git clone --depth=1 https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+
+# homeproxy
+git clone --depth=1 https://github.com/immortalwrt/homeproxy package/luci-app-homeproxy
+
+# mihomo
+git clone --depth=1 https://github.com/morytyann/OpenWrt-mihomo package/luci-app-mihomo
 
 # iStore
 git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
